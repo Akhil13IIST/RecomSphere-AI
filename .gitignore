@@ -1,0 +1,48 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# All datasets stay local
+data/
+
+# Model artifacts: only collaborative runtime files are included
+models/*
+!models/collaborative/
+models/collaborative/*
+!models/collaborative/user_ids.npy
+!models/collaborative/track_ids_compact.npz
+!models/collaborative/user_item_matrix.npz
+!models/collaborative/user_similarity.npy
+!models/collaborative/track_metadata.parquet
+
+# Large retrieval artifacts and experiment outputs
+*.pt
+*.pth
+*.faiss
+*.db
+*.sqlite*
+mlruns/
+
+# Logs and generated files
+*.log
+*.crc
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+tools/hadoop-3.4.1/
+tools/hadoop-3.4.1.zip
