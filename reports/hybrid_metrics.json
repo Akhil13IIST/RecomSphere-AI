@@ -1,0 +1,10 @@
+{
+    "evaluated_users": 907,
+    "precision_at_10": 0.12359426681367144,
+    "recall_at_10": 0.1372348467134762,
+    "ndcg_at_10": 0.167937525265869,
+    "hit_rate_at_10": 0.597574421168688,
+    "map_at_10": 0.09091094054306764,
+    "collaborative_weight": 0.7,
+    "content_weight": 0.3
+}
